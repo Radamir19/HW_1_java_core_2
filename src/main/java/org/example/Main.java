@@ -19,8 +19,8 @@ public abstract class Main {
     Random random = new Random();
     Actions[] actions = new Actions[3];
 
-    int distance = random.nextInt(10);
-    int height = random.nextInt(10);
+    int distance = random.nextInt(1000);
+    int height = random.nextInt(25);
 
-    
+    //actions [0] = new Person("Nilolay",distance, height);
 }

@@ -18,7 +18,7 @@ public class Wall extends Barrier {
         System.out.println("The wall "+ super.getName()+" height is: "+ height);
         actions.jump();
 
-        if(getHeight() <= actions.getWallHeight()){
+        if(getHeight() <= actions.getJumpHeight()){
             System.out.println("Jump successful");
 
             return true;
