@@ -4,12 +4,12 @@ package org.example;
 
 public class Cat implements Actions {
     private String name;
-    private int distance;
+    private int runDistance;
     private int verticalJump;
 
-    public Cat(String name, int distance, int verticalJump) {
+    public Cat(String name, int runDistance, int verticalJump) {
         this.name = name;
-        this.distance = distance;
+        this.runDistance = runDistance;
         this.verticalJump = verticalJump;
     }
 
@@ -23,12 +23,12 @@ public class Cat implements Actions {
     }
 
     @Override
-    public int getTreadmillDistance() {
-        return distance;
+    public int getRunDistance() {
+        return runDistance;
     }
 
     @Override
-    public int getWallHeight() {
+    public int getJumpHeight() {
         return verticalJump;
     }
 

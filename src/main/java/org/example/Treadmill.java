@@ -18,7 +18,7 @@ public class Treadmill extends Barrier {
         System.out.println("The treadmill " + super.getName() + " length is: "+ length);
         actions.run();
 
-        if(getLength() <= actions.getTreadmillDistance()){
+        if(getLength() <= actions.getRunDistance()){
             System.out.println("Run was successful");
             return true;
         }else{
