@@ -4,30 +4,31 @@ package org.example;
 
 public class Person implements Actions{
     private String name;
-    private int distance;
+    private int runDistance;
     private int verticalJump;
 
-    public Person(String name, int distance, int verticalJump) {
+    public Person(String name, int runDistance, int verticalJump) {
         this.name = name;
-        this.distance = distance;
+        this.runDistance = runDistance;
         this.verticalJump = verticalJump;
     }
 
     @Override
     public void jump() {
-        System.out.println("Person " + name + " is jumping "+getVerticalJump());
+        System.out.println("Person " + name + " is jumping "+getJumpHeight());
     }
 
     @Override
     public void run() {
-        System.out.println("Person " + name +" is running "+getDistance());
+        System.out.println("Person " + name +" is running "+getRunDistance());
     }
 
-    public int getDistance() {
-        return distance;
+    public int getRunDistance() {
+        return runDistance;
     }
 
-    public int getVerticalJump() {
+    @Override
+    public int getJumpHeight() {
         return verticalJump;
     }
 }
