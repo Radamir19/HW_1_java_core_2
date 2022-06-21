@@ -1,6 +1,6 @@
 package org.example;
 
-import java.util.Random;
+
 
 public abstract class Main {
 
@@ -15,12 +15,14 @@ public abstract class Main {
         robot.jump();
         robot.run();*/
     }
+    Person person = new Person("Alex",500,40);
+    Cat cat = new Cat("Barsik",700,30);
+    Robot robot = new Robot("000001110",200,0);
+    Wall wall = new Wall("Wall",30);
+    Treadmill treadmill = new Treadmill("Treadmill", 450);
 
-    Random random = new Random();
-    Actions[] actions = new Actions[3];
+    Actions[] actions = {person, cat, robot};
+    Barrier[] barrier = {treadmill,wall};
 
-    int distance = random.nextInt(1000);
-    int height = random.nextInt(25);
 
-    //actions [0] = new Person("Nilolay",distance, height);
 }

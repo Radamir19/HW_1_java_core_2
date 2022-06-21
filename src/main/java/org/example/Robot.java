@@ -13,22 +13,18 @@ public class Robot implements Actions{
         this.verticalJump = verticalJump;
     }
 
-    public Robot() {
-
-    }
-
     @Override
     public void jump() {
         System.out.println("Robot is jumping");
     }
 
     @Override
-    public int getTreadmillDistance() {
+    public int getRunDistance() {
         return distance;
     }
 
     @Override
-    public int getWallHeight() {
+    public int getJumpHeight() {
         return verticalJump;
     }
 
